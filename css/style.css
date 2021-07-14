@@ -1,6 +1,9 @@
 /* Font  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /* common style or utilities */
+*{
+    margin:0px;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
@@ -39,11 +42,27 @@ header {
   height: 44px;
   padding: 10px 24px;
   color: #ffffff;
-  background: #e02c6d;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
   margin-bottom: 169px;
+}
+.watch-btn{
+width: 173px;
+height: 44px;
+left: 0px;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+background-color: #e02c6d;
+outline: none;
+}
+.watch-btn:hover{
+    background-color: white;
+    color:#e02c6d;
+    transition: ease-in 0.3s;
+    cursor: pointer;
 }
 .header-right img {
   width: 556.01px;
@@ -58,7 +77,8 @@ header {
 .top-players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
+  grid-gap: 30px;
+  margin-top:70px;
 }
 .player .player-photo img {
   width: 300px;
@@ -67,7 +87,7 @@ header {
 .player .player-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   padding: 0px;
   position: static;
   width: 300px;
@@ -89,14 +109,11 @@ header {
 }
 
 .player {
-    flex-direction: row;
-  align-items: flex-start;
+
   padding-top: 15px;
   padding-left: 15px;
-  padding-bottom: 15px;
   width: 330px;
   height: 474px;
-  margin-top: 70px;
   background: #ffffff;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
